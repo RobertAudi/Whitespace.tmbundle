@@ -5,7 +5,7 @@
 	<key>fileTypes</key>
 	<array/>
 	<key>injectionSelector</key>
-	<string>-source.diff</string>
+	<string>text, source</string>
 	<key>name</key>
 	<string>Trailing Whitespace</string>
 	<key>patterns</key>
@@ -13,14 +13,14 @@
 		<dict>
 			<key>captures</key>
 			<dict>
-				<key>3</key>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>invalid.illegal.whitespace.trailing</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>((\S)([^\S\n\f\r]+)$)</string>
+			<string>(([^\S\n\f\r]+)[\n\f\r])</string>
 		</dict>
 	</array>
 	<key>uuid</key>
